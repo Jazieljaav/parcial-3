@@ -1,0 +1,455 @@
+html{
+    scroll-behavior: smooth;
+  }
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .tabla {
+    margin: 12px 0px 0px 0px;
+    font-family: sans-serif;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-areas:
+      " cabecera cabecera cabecera "
+      " celda1 celda1 celda1 "
+      " celda2 celda3 celda4 "
+      " celda5 celda5 celda7 "
+      " celda8 celda8 celda7 "
+      " celda10 celda10 celda10 "
+      " celda9 celda9 celda9 ";
+    grid-template-rows: 90px 400px 500px 300px 300px 700px  210px ;
+  
+  }
+  
+  .cabecera {
+    padding: 20px;
+    grid-area: cabecera;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .cabecera {
+    background-color: rgb(255, 255, 255);
+  
+  }
+  
+  
+  .logo {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #194189;
+    animation: arriba 1s ease-in;
+  }
+  
+  .logo span {
+    padding: 10px;
+    color: #db4b6a;
+  }
+  
+  
+  .nav ul li {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    font-weight: bold;
+    animation: arriba 1s ease-in;
+  }
+  
+  .nav ul a {
+    
+    margin: 0 20px;
+  }
+  
+  .nav a:hover {
+    color: #db4b6a;
+  }
+  .cabecera img{
+    width: 90px;
+    height: 80px;
+    animation: moverIzquierda 1s ease-in;
+  }
+  
+  .celda1 {
+    grid-area: celda1;
+    
+    background-image: url(/img/7835171-ai\ \(1\).jpg)
+  }
+  
+  .celda1 p {
+  
+    font-size: 50px;
+    margin-top: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #db4b6a;
+    line-height: 1.6;
+    box-shadow: black;
+    animation: moverIzquierda 1s ease-in;
+  }
+  
+  .inicio{
+    margin-left: 90px ;
+    margin-top: 50px;
+  }
+  .celda1 span{
+    display: flex;
+    padding: 50px 0px;
+    font-weight: bold;
+    font-size: 25px;
+    animation: moverIzquierda 1s ease-in; /*especifica un efecto de transición con un comienzo lento*/
+  }
+  .celda1 a{
+    color: #194189;
+    background: white;
+    border-radius: 30px;
+    padding: 20px 30px;
+    color: #194189;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /*especifica un efecto de transición con un comienzo lento, luego rápido, luego termina lentamente*/
+  }
+  .celda1 a:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    color: #db4b6a;
+  }
+  
+  .celda1 .foto {
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+    top: 150px;
+    animation: moverDerecha 1s ease-in;
+  }
+  
+  .celda2 {
+    grid-area: celda2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: animar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;/*especifica un efecto de transición con un final lento*/
+  } 
+  .celda2:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  
+  } 
+  .celda2 img{
+    width: 300px;
+    border: 10px solid #db4b6a;
+    border-radius: 200px;
+  }
+  .celda2 h4 {
+    padding: 30px;
+    color: #194189;
+    font-size: 20px;
+  }
+  .celda2 A:hover{  
+    color: #db4b6a;                      
+  }
+  
+  .celda3 {
+    grid-area: celda3;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: animar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+  }
+  .celda3:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    
+  }
+  .celda3 img{
+    width: 300px;
+    border: 10px solid #db4b6a;
+    border-radius: 200px;
+  }
+  .celda3 h4{
+    padding: 30px;
+    color: #194189;
+    font-size: 20px;
+  }
+  .celda3 A:hover{  
+    color: #db4b6a;                      
+  }
+  
+  .celda4 {
+    grid-area: celda4;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: animar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+  }
+  .celda4:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    
+  }
+  .celda4 img{
+    width: 300px;
+    border: 10px solid #db4b6a;
+    border-radius: 200px;
+  }
+  
+  
+  .celda4 h4{
+    padding: 30px;
+    font-size: 20px;
+    color: #194189;
+  }
+  .celda4 A:hover{  
+    color: #db4b6a;                      
+  }
+
+  .celda5 {
+    grid-area: celda5;
+    padding: 0 80px;
+    display: flex;
+    animation-name: animar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+  
+  }
+  .celda5 img{
+    width: 300px;
+    border-radius: 90px;
+  }
+  .celda5 .sobremi {
+    padding: 90px 80px;
+  }
+  .celda5 .sobremi p{
+    text-align: justify;
+    padding: 10px 0px;
+  }
+  
+  .celda7 {
+    grid-area: celda7;
+    padding: 10px 80px;
+    border-radius: 4px;
+    color: white;
+    animation-name: animar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    
+  }
+  .celda7 .fondo{
+    background-color: #194189;
+    padding:70px 100px;
+  }
+  
+  .celda7 h4{
+      font-size: 30px;
+      margin-bottom: 30px;
+  }
+  .btn{
+      width: 100%;
+      margin-bottom:10px;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 15px;
+      border: 3px solid #db4b6a;
+      }
+      .celda7 p{
+        height: 20px;
+        text-align: center;
+        font-size: 13px ;
+      }
+      .celda7 a{
+        color: white;
+      }
+      .celda7 a:hover{
+        color: #db4b6a;
+        cursor: pointer;
+      }
+      .celda7 .boton{
+        width: 100%;
+        background: #db4b6a;
+        border: none;
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+        margin: 16px 0;
+      }
+      .celda7 .boton:hover{
+        color: #194189;
+        cursor: pointer;
+      }
+  
+  
+  .celda8 {
+    grid-area: celda8;
+    padding: 0 80px;
+    display: flex;
+    animation-name: animar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+  }
+  .celda8 img{
+    width: 300px;
+    border-radius: 90px;  
+  }
+  .celda8 .sobremi {
+    padding: 90px 80px;
+  }
+  .celda8 .sobremi p{
+    text-align: justify;
+    padding: 10px 0px;
+  }
+
+   .celda10{
+    width: 100%;
+    grid-area: celda10;
+    overflow: hidden;
+}
+.intro{
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: animar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+  font-size: 25px;
+}
+
+.slider-contenedor{
+  padding: 40px 0px;
+    display: flex;
+   
+}
+
+.contenido-slider{
+    width: 100%;
+    height:500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    background: #194189;
+    color: #fff;
+}
+.contenido-slider:nth-child(1){
+  background: #194189;
+  color: #fff;
+}
+.contenido-slider:nth-child(2){
+    background: #db4b6a;
+    color: #fff;
+}
+
+.contenido-slider:nth-child(3){
+    background: #194189;
+}
+
+.contenido-slider > img{
+    width: 400px;
+    border-radius: 100px;
+}
+
+.contenido-slider > div{
+    width: 20%;
+}
+
+.contenido-slider h2{
+    font-weight: 300;
+    line-height: 30px;
+    
+}
+
+  .celda9 {
+    background:  #db4b6a;
+    grid-area: celda9;
+    color: white;
+  }
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    line-height: 30px;
+    
+  }
+
+  .boton2{
+    
+    color: #194189;
+    background: white;
+    border-radius: 30px;
+    padding: 20px 30px;
+    color: #194189;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    
+  }
+  .footer a:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    color: #db4b6a;
+  }
+  
+
+
+  @keyframes arriba {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha {
+  0%{/*punto iniciala 100%*/
+      opacity: 0;/*opacidad de incio*/
+      transform: translateX(100px);/*mover hasta el punto x*/
+  }
+
+  100%{
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+@keyframes moverIzquierda {
+  0%{
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+
+  100%{
+      opacity: 1;
+      transform: translate(0);/*lo traslada a 0*/
+  }
+}
+@keyframes animar {
+  0%{
+      transform: scale(.3);/*para poder escalar como un zoom*/
+  } 
+
+}
